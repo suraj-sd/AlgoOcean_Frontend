@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import {
   createProduct,
   deleteProduct,
-  getProducts,
-  updateProduct
+  getProducts
+  // updateProduct
 } from "../../api/product.api";
 
 import {

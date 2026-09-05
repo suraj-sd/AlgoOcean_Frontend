@@ -36,20 +36,20 @@ export const createProduct = async (data: {
   return response.data;
 };
 
-export const updateProduct = async (
-  id: number,
-  data: Partial<{
-    name: string;
-    description: string;
-    price: number;
-    stock: number;
-    categoryId: number;
-  }>,
-) => {
-  const response = await api.put(`/products/${id}`, data);
+// export const updateProduct = async (
+//   id: number,
+//   data: Partial<{
+//     name: string;
+//     description: string;
+//     price: number;
+//     stock: number;
+//     categoryId: number;
+//   }>,
+// ) => {
+//   const response = await api.put(`/products/${id}`, data);
 
-  return response.data;
-};
+//   return response.data;
+// };
 
 export const deleteProduct = async (id: number) => {
   const response = await api.delete(`/products/${id}`);
